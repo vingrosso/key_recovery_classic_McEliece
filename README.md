@@ -1,8 +1,8 @@
-### Description
+## Description
 
-This attack script comes with the article entitled "Single-Trace Key-Recovery Template Attack on Classic McEliece Decapsulation"
+This repository comes with the article entitled "Single-Trace Key-Recovery Template Attack on Classic McEliece Decapsulation"
 
-### Installation
+## Installation
 
 The following Python packages are required:
 
@@ -18,7 +18,7 @@ They can be installed with:
 $ python3 -m pip install -r requirements.txt
 ```
 
-#### Unzipping precomputed hash tables
+### Unzipping precomputed hash tables
 
 Precomputed hash tables can be unzipped with:
 
@@ -28,13 +28,17 @@ $ gunzip -k F2\^12_n_pow_22.msgpack.gz
 $ gunzip -k F2\^13_n_pow_22.msgpack.gz
 ```
 
-### Usage
+## Usage on ChipWhisperer traces
+
+
+
+## Usage on simulated side-channel traces
 
 ```
 python3 attach.py n t m --accuracy=a
 ```
 
-#### Perfect accuracy
+### Perfect accuracy
 
 ```
 $ python3 attack.py 512 20 9                
