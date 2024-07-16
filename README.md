@@ -24,7 +24,10 @@ $ python3 -m pip install -r requirements.txt
 
 ### Unzipping precomputed hash tables
 
-Precomputed hash tables can be unzipped with:
+You may download precomputed hash tables directly from the GitHub repository.
+As far as we can tell, pulling them does not work since they are stored with LFS.
+
+The precomputed hash tables can be unzipped with:
 
 ```
 $ gunzip -k F2\^9_n_pow_22.msgpack.gz
