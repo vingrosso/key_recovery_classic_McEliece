@@ -1,0 +1,8 @@
+# Essential to the attack
+galois==0.3.10
+msgpack==1.0.8
+numpy==1.23.2
+
+# Make the attack script look nicer
+coloredlogs==15.0.1
+tqdm==4.64.1
