@@ -28,17 +28,18 @@ $ gunzip -k F2\^12_n_pow_22.msgpack.gz
 $ gunzip -k F2\^13_n_pow_22.msgpack.gz
 ```
 
-## Usage on ChipWhisperer traces
+## Usage
+### Usage on ChipWhisperer traces
 
+Use scripts in the `side-channel` folder
 
-
-## Usage on simulated side-channel traces
+### Usage on simulated side-channel traces
 
 ```
 python3 attach.py n t m --accuracy=a
 ```
 
-### Perfect accuracy
+#### Perfect accuracy
 
 ```
 $ python3 attack.py 512 20 9                
@@ -61,7 +62,7 @@ $ python3 attack.py 512 20 9
 [XX:XX:05] Attack successful ! Done in 0:00:00.520167
 ```
 
-### Custom accuracy
+#### Custom accuracy
 
 ```
 $ python3 attack.py 512 20 9 --accuracy=0.97
@@ -97,3 +98,20 @@ $ python3 attack.py 512 20 9 --accuracy=0.9
 [XX:XX:20]     - get a more accurate side-channel distinguisher.
 ```
 
+## Reproducibility
+
+### Execution time
+
+Execution times for the 6 lines of Algorithm 1 (Table 7) are measured with:
+
+```
+$ ./measure_timings.sh
+```
+
+### Success rate
+
+The attack success rate (Figure 3) is computed with:
+
+```
+$ python3.8 compute_success_rate.py
+```
