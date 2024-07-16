@@ -61,7 +61,7 @@ $ python3 attack.py 512 20 9
 [XX:XX:05] Attack successful ! Done in 0:00:00.520167
 ```
 
-## Custom accuracy
+### Custom accuracy
 
 ```
 $ python3 attack.py 512 20 9 --accuracy=0.97
