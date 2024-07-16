@@ -2,6 +2,10 @@
 
 This repository comes with the article entitled "Single-Trace Key-Recovery Template Attack on Classic McEliece Decapsulation"
 
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Reproducibility](#reproducibility)
+  
 ## Installation
 
 The following Python packages are required:
